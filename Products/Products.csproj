@@ -8,7 +8,8 @@
     <ContainerRuntimeIdentifier>win-x64</ContainerRuntimeIdentifier>
     <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
     <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809</ContainerBaseImage>
-    <UserSecretsId>39e4407d-8828-4721-b3a5-2d4b9403cf75</UserSecretsId>
+    <UserSecretsId>23a7ec37-66eb-4f5c-ad78-20efcd929e25</UserSecretsId>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>

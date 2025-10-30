@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Products_Epic4.Controllers
+namespace Products.Controllers
 {
     [ApiController]
     [Route("[controller]")]

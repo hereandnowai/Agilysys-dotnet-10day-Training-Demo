@@ -1,4 +1,4 @@
-namespace Products_Epic4
+namespace Products
 {
     public class WeatherForecast
     {
