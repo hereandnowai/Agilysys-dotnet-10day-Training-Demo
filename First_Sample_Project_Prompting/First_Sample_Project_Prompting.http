@@ -1,6 +1,0 @@
-@First_Sample_Project_Prompting_HostAddress = http://localhost:5005
-
-GET {{First_Sample_Project_Prompting_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

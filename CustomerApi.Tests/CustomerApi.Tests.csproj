@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\First_Sample_Project_Prompting\First_Sample_Project_Prompting.csproj" />
+    <ProjectReference Include="..\Customers\Customers.csproj" />
   </ItemGroup>
 
 </Project>
