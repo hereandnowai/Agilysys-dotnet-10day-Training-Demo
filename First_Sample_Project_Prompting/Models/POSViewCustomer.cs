@@ -36,7 +36,7 @@ public class POSViewCustomer
     /// </summary>
     [Required(ErrorMessage = "Billing address is required")]
     [StringLength(500, MinimumLength = 1, ErrorMessage = "Billing address must be between 1 and 500 characters")]
-    public string billing_address { get; set; } = string.Empty;
+    public string BillingAddress { get; set; } = string.Empty;
 
     /// <summary>
     /// Validates the input data and throws an exception if validation fails.
@@ -84,11 +84,11 @@ public class POSViewCustomer
         }
 
         // Validate billing_address
-        if (string.IsNullOrWhiteSpace(billing_address))
+        if (string.IsNullOrWhiteSpace(BillingAddress))
         {
             validationErrors.Add("Billing address is required and cannot be empty");
         }
-        else if (billing_address.Length > 500)
+        else if (BillingAddress.Length > 500)
         {
             validationErrors.Add("Billing address must not exceed 500 characters");
         }
@@ -149,7 +149,7 @@ public class POSViewCustomer
             Name = Name?.Trim() ?? string.Empty,
             Email = Email?.Trim().ToLowerInvariant() ?? string.Empty,
             Phone = Phone?.Trim(),
-            billing_address = billing_address?.Trim() ?? string.Empty,
+            billing_address = BillingAddress?.Trim() ?? string.Empty,
             CreatedAt = DateTime.UtcNow
         };
     }
@@ -166,7 +166,7 @@ public class POSViewCustomer
         customer.Name = Name?.Trim() ?? string.Empty;
         customer.Email = Email?.Trim().ToLowerInvariant() ?? string.Empty;
         customer.Phone = Phone?.Trim();
-        customer.billing_address = billing_address?.Trim() ?? string.Empty;
+        customer.billing_address = BillingAddress?.Trim() ?? string.Empty;
         customer.UpdatedAt = DateTime.UtcNow;
     }
 }

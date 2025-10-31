@@ -173,7 +173,7 @@ public CustomersControllerTests()
          Name = "John Doe",
    Email = "john@test.com",
         Phone = "555-0100",
-       billing_address = "123 Main St"
+       BillingAddress = "123 Main St"
         };
       
       var createdCustomer = new POSCustomer
@@ -209,7 +209,7 @@ Assert.Equal(1, returnedCustomer.Id);
    {
             Name = "John Doe",
 Email = "invalid-email",
-billing_address = "123 Main St"
+BillingAddress = "123 Main St"
         };
    
         _mockService.Setup(s => s.CreateCustomerAsync(viewCustomer))
@@ -234,7 +234,7 @@ billing_address = "123 Main St"
    {
 Name = "John Doe",
   Email = "john@test.com",
-      billing_address = "123 Main St"
+      BillingAddress = "123 Main St"
     };
         
 _mockService.Setup(s => s.CreateCustomerAsync(viewCustomer))
@@ -281,7 +281,7 @@ _mockService.Setup(s => s.CreateCustomerAsync(viewCustomer))
    {
             Name = "John Updated",
       Email = "john@test.com",
-       billing_address = "123 Main St"
+       BillingAddress = "123 Main St"
     };
 
    var updatedCustomer = new POSCustomer
@@ -316,7 +316,7 @@ _mockService.Setup(s => s.CreateCustomerAsync(viewCustomer))
   {
        Name = "John Doe",
             Email = "john@test.com",
-  billing_address = "123 Main St"
+  BillingAddress = "123 Main St"
         };
 
         _mockService.Setup(s => s.UpdateCustomerAsync(id, viewCustomer))
@@ -342,7 +342,7 @@ _mockService.Setup(s => s.CreateCustomerAsync(viewCustomer))
         {
             Name = "John Doe",
        Email = "jane@test.com",
-            billing_address = "123 Main St"
+            BillingAddress = "123 Main St"
         };
 
 _mockService.Setup(s => s.UpdateCustomerAsync(id, viewCustomer))

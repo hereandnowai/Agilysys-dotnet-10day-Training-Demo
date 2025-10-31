@@ -165,7 +165,7 @@ Id = id,
       Name = "John Doe",
         Email = "john@test.com",
 Phone = "555-0100",
-            billing_address = "123 Main St"
+            BillingAddress = "123 Main St"
   };
 
         _mockRepository.Setup(r => r.EmailExistsAsync(It.IsAny<string>(), null)).ReturnsAsync(false);
@@ -193,7 +193,7 @@ Phone = "555-0100",
         {
      Name = "John Doe",
      Email = "john@test.com",
-       billing_address = "123 Main St"
+       BillingAddress = "123 Main St"
         };
       
         _mockRepository.Setup(r => r.EmailExistsAsync(It.IsAny<string>(), null)).ReturnsAsync(true);
@@ -229,7 +229,7 @@ Phone = "555-0100",
         {
        Name = "John Doe",
 Email = "invalid-email",
-    billing_address = "123 Main St"
+    BillingAddress = "123 Main St"
         };
 
     // Act & Assert
@@ -261,7 +261,7 @@ Email = "invalid-email",
         {
   Name = "John Updated",
  Email = "john@test.com",
-  billing_address = "123 Main St"
+  BillingAddress = "123 Main St"
       };
 
         _mockRepository.Setup(r => r.GetByIdAsync(id)).ReturnsAsync(existingCustomer);
@@ -290,7 +290,7 @@ Email = "invalid-email",
         {
   Name = "John Doe",
             Email = "john@test.com",
-            billing_address = "123 Main St"
+            BillingAddress = "123 Main St"
         };
 
         _mockRepository.Setup(r => r.GetByIdAsync(id)).ReturnsAsync((POSCustomer?)null);
@@ -322,7 +322,7 @@ Email = "invalid-email",
     {
             Name = "John Doe",
      Email = "jane@test.com", // Different email that belongs to another customer
-            billing_address = "123 Main St"
+            BillingAddress = "123 Main St"
 };
 
   _mockRepository.Setup(r => r.GetByIdAsync(id)).ReturnsAsync(existingCustomer);
