@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products_Epic4", "Products_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products_Epic4", "Products_Epic4\Products_Epic4.csproj", "{574D5E9B-80E3-4E10-9CB1-3E3D9B6BEF4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers", "..\Customers_Epic3\First_Sample_Project_Prompting\Customers.csproj", "{0154EF2D-3528-4A2F-9FFB-D100F93CAB6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{574D5E9B-80E3-4E10-9CB1-3E3D9B6BEF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{574D5E9B-80E3-4E10-9CB1-3E3D9B6BEF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{574D5E9B-80E3-4E10-9CB1-3E3D9B6BEF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0154EF2D-3528-4A2F-9FFB-D100F93CAB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0154EF2D-3528-4A2F-9FFB-D100F93CAB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0154EF2D-3528-4A2F-9FFB-D100F93CAB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0154EF2D-3528-4A2F-9FFB-D100F93CAB6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
